@@ -1,0 +1,248 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8725,        240]
+NotebookOptionsPosition[      8079,        220]
+NotebookOutlinePosition[      8549,        238]
+CellTagsIndexPosition[      8506,        235]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Circles\>\"", ",", 
+      RowBox[{
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ReIm", "[", 
+            RowBox[{"E", "^", 
+             RowBox[{"(", 
+              RowBox[{"I", " ", "\[Omega]"}], ")"}]}], "]"}], ",", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{"2", "*", 
+             RowBox[{"E", "^", 
+              RowBox[{"(", 
+               RowBox[{"I", "  ", "\[Omega]"}], ")"}]}]}], "]"}], ",", " ", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{"0.2", 
+             RowBox[{"E", "^", 
+              RowBox[{"(", 
+               RowBox[{"I", "  ", "\[Omega]"}], ")"}]}]}], "]"}]}], "}"}], 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"\[Omega]", ",", "0", ",", 
+           RowBox[{"2", " ", "\[Pi]"}]}], "}"}]}], "]"}], "//", 
+       "CreatePalette"}]}], "]"}], ",", 
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Vertical lines\>\"", ",", 
+      RowBox[{
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ReIm", "[", 
+            RowBox[{"5", "+", 
+             RowBox[{"I", " ", "y"}]}], "]"}], ",", " ", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{"0", "+", 
+             RowBox[{"I", " ", "y"}]}], "]"}], ",", " ", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{
+             RowBox[{"-", "5"}], "+", 
+             RowBox[{"I", " ", "y"}]}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"y", ",", 
+           RowBox[{
+            RowBox[{"-", "2"}], " ", "\[Pi]"}], ",", 
+           RowBox[{"2", " ", "\[Pi]"}]}], "}"}]}], "]"}], "//", 
+       "CreatePalette"}]}], "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Horizontal lines\>\"", ",", 
+      RowBox[{
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ReIm", "[", 
+            RowBox[{"x", "+", 
+             RowBox[{"5", "I"}]}], " ", "]"}], ",", " ", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{"x", "+", 
+             RowBox[{"0", "I"}]}], " ", "]"}], ",", " ", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{"x", "+", 
+             RowBox[{
+              RowBox[{"-", "5"}], "I"}]}], " ", "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{
+            RowBox[{"-", "2"}], " ", "\[Pi]"}], ",", 
+           RowBox[{"2", " ", "\[Pi]"}]}], "}"}]}], "]"}], "//", 
+       "CreatePalette"}]}], "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Button", "[", 
+     RowBox[{"\"\<Two curves\>\"", ",", 
+      RowBox[{
+       RowBox[{"ParametricPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ReIm", "[", 
+            RowBox[{
+             RowBox[{"E", "^", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "I"}], " ", "\[Omega]"}], ")"}]}], " ", "+", " ", 
+             RowBox[{"2", 
+              RowBox[{"E", "^", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"I", " ", "\[Omega]"}], ")"}], "/", "3"}], 
+                ")"}]}]}]}], "]"}], ",", " ", 
+           RowBox[{"ReIm", "[", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"E", "^", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "I"}], " ", "\[Omega]"}], ")"}]}], " ", "+", 
+               RowBox[{"1.9", 
+                RowBox[{"E", "^", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"I", " ", "\[Omega]"}], ")"}], 
+                   RowBox[{"2", "/", "3"}]}], ")"}]}]}], " ", "+", " ", 
+               RowBox[{"E", "^", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "2"}], " ", "I", " ", "\[Omega]"}], ")"}]}]}], 
+              ")"}], "I"}], "]"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"\[Omega]", ",", 
+           RowBox[{"-", "15"}], ",", "15"}], "}"}]}], "]"}], "//", 
+       "CreatePalette"}]}], "]"}]}], "}"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", " ", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwdzFkowwEAx/G57yPHFBIbEmqiHDlKlgelGEJYpkYxOdack5tYyVHzz1FG
+Ise2bA9jDTEe3DW5QlKKknOWmLLf/+HX5+XbL6CkisU1p1AogabB8ZKaJK72
+Ofk0YCIVKo+DsqDm8bwALlBiOZBjpy6Dt4W6SjjT/lgHV+7lzbCXb9ZC9mlR
+7fCI+tkFG3RPYujD2RiFy4sn45BgeEnIX9bmNWRqmXfQjf6lhwN/LAPkSrL/
+oFAzaFFqMne73wZOza6TfgvPeZCYOKiF6x40IfRgG0VkZxk1BMdEshHY9xFO
+wJ+fBCl8p80r4DTzTAW3svsyy2FFYg7UF8ez4XVdfTGU7oY1QpVc1QSdVx9E
+sDAieBAuGfbF8MjAkcBy/plrhcnq3+FQaF3Vw4B5O0XR0F+/kwEZKQ758OWJ
+3QhjHP1aoX11WSdUEoYhON+mE8Ne4yQBI7Xdk1AqkM9BbwV/iezpIXIYaOmp
+hB0uYtIt/tUepN24H8IP6t093PR9NcI3Nd2KZ5J36WIL1xRaJxgnaKBCzwuZ
+N0zvFITAf4OAP3I=
+  "],
+ CellLabel->
+  "In[300]:=",ExpressionUUID->"9fa9499a-7ef2-4b78-99d8-37b745a334c8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   ButtonBox["\<\"Circles\"\>",
+    Appearance->Automatic,
+    ButtonFunction:>CreatePalette[
+      ParametricPlot[{
+        ReIm[E^(I $CellContext`\[Omega])], 
+        ReIm[2 E^(I $CellContext`\[Omega])], 
+        ReIm[0.2 E^(I $CellContext`\[Omega])]}, {$CellContext`\[Omega], 0, 2 
+        Pi}]],
+    Evaluator->Automatic,
+    Method->"Preemptive"], ",", 
+   ButtonBox["\<\"Vertical lines\"\>",
+    Appearance->Automatic,
+    ButtonFunction:>CreatePalette[
+      ParametricPlot[{
+        ReIm[5 + I $CellContext`y], 
+        ReIm[0 + I $CellContext`y], 
+        ReIm[-5 + I $CellContext`y]}, {$CellContext`y, (-2) Pi, 2 Pi}]],
+    Evaluator->Automatic,
+    Method->"Preemptive"], ",", 
+   ButtonBox["\<\"Horizontal lines\"\>",
+    Appearance->Automatic,
+    ButtonFunction:>CreatePalette[
+      ParametricPlot[{
+        ReIm[$CellContext`x + 5 I], 
+        ReIm[$CellContext`x + 0 I], 
+        ReIm[$CellContext`x - 5 I]}, {$CellContext`x, (-2) Pi, 2 Pi}]],
+    Evaluator->Automatic,
+    Method->"Preemptive"], ",", 
+   ButtonBox["\<\"Two curves\"\>",
+    Appearance->Automatic,
+    ButtonFunction:>CreatePalette[
+      ParametricPlot[{
+        ReIm[
+        E^((-I) $CellContext`\[Omega]) + 2 E^((I $CellContext`\[Omega])/3)], 
+        ReIm[(E^((-I) $CellContext`\[Omega]) + 
+          1.9 E^((I $CellContext`\[Omega]) (2/3)) + 
+          E^((-2) I $CellContext`\[Omega])) I]}, {$CellContext`\[Omega], -15, 
+        15}]],
+    Evaluator->Automatic,
+    Method->"Preemptive"]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8610764055522895`*^9, {3.8610766669015265`*^9, 3.8610766816837845`*^9}, 
+   3.861076986267374*^9, {3.861077022046076*^9, 3.8610770572422996`*^9}, {
+   3.861077105986967*^9, 3.861077136543976*^9}, 3.8610771898413105`*^9, {
+   3.861077229713333*^9, 3.8610773105717573`*^9}, 3.8610774136593513`*^9, 
+   3.861077593874226*^9, 3.861077794462573*^9, {3.8610778437241154`*^9, 
+   3.861077890758713*^9}, {3.8610779335458193`*^9, 3.8610779928932858`*^9}, {
+   3.861078068058809*^9, 3.8610780810455904`*^9}, {3.861078132926709*^9, 
+   3.8610781965964794`*^9}, {3.861078230394944*^9, 3.8610782543762846`*^9}, {
+   3.86107831679737*^9, 3.861078341050334*^9}},
+ CellLabel->
+  "Out[300]=",ExpressionUUID->"34c0cac1-ae79-4716-8e43-a06015720f4d"]
+}, Open  ]],
+
+Cell[BoxData["|"], "Input",
+ CellChangeTimes->{
+  3.861064463133603*^9},ExpressionUUID->"8ebf4696-9b4f-4d51-a3d3-\
+a4485f12e5e9"]
+},
+WindowSize->{1152., 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+Magnification:>0.9 Inherited,
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"535bd2e7-3095-488c-bb04-7a46642ee667"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5054, 134, 187, "Input",ExpressionUUID->"9fa9499a-7ef2-4b78-99d8-37b745a334c8"],
+Cell[5637, 158, 2294, 54, 38, "Output",ExpressionUUID->"34c0cac1-ae79-4716-8e43-a06015720f4d"]
+}, Open  ]],
+Cell[7946, 215, 129, 3, 25, "Input",ExpressionUUID->"8ebf4696-9b4f-4d51-a3d3-a4485f12e5e9"]
+}
+]
+*)
+
